@@ -5,21 +5,21 @@
 class Compliancekit < Formula
   desc "Open-source compliance scanner for cloud and Linux infrastructure -- SOC 2, ISO 27001, CIS"
   homepage "https://github.com/darpanzope/compliancekit"
-  version "1.6.0"
+  version "1.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/darpanzope/compliancekit/releases/download/v1.6.0/compliancekit_1.6.0_darwin_amd64.tar.gz"
-      sha256 "6517b790fe3f50920df91503573461a2df7ac5395fd7801b504172df8e21cb66"
+      url "https://github.com/darpanzope/compliancekit/releases/download/v1.7.0/compliancekit_1.7.0_darwin_amd64.tar.gz"
+      sha256 "6daf27f1e93c44af11549f90246eb22679fed5566d8dd38887d93f169bb3d1e0"
 
       define_method(:install) do
         bin.install "compliancekit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/darpanzope/compliancekit/releases/download/v1.6.0/compliancekit_1.6.0_darwin_arm64.tar.gz"
-      sha256 "6d5abc7348380c8440f295a34e3b4367543c4c2926cac177ad6d13174c57e630"
+      url "https://github.com/darpanzope/compliancekit/releases/download/v1.7.0/compliancekit_1.7.0_darwin_arm64.tar.gz"
+      sha256 "7f4d70f499b0d764013f45abad66c25fd281a1e862be4d5550d6c93932b49ad6"
 
       define_method(:install) do
         bin.install "compliancekit"
@@ -29,15 +29,15 @@ class Compliancekit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/darpanzope/compliancekit/releases/download/v1.6.0/compliancekit_1.6.0_linux_amd64.tar.gz"
-      sha256 "40e637999f64c755f276d4f2a688fcdf4645d371323a0d928a0a16c7a6459f8d"
+      url "https://github.com/darpanzope/compliancekit/releases/download/v1.7.0/compliancekit_1.7.0_linux_amd64.tar.gz"
+      sha256 "9437791840e61f4ddcdb3bc0eb40d9f1c0860d756aec2137fe27da3084fdaf7f"
       define_method(:install) do
         bin.install "compliancekit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/darpanzope/compliancekit/releases/download/v1.6.0/compliancekit_1.6.0_linux_arm64.tar.gz"
-      sha256 "10554797f1776b4ee8a6ab5faf87f9a52fb550fd79a2b768b4f4df220ff85841"
+      url "https://github.com/darpanzope/compliancekit/releases/download/v1.7.0/compliancekit_1.7.0_linux_arm64.tar.gz"
+      sha256 "199489fb3f9a14d006dea9b03f0f2ecd284224f2d00f5d20b3b402340e36093d"
       define_method(:install) do
         bin.install "compliancekit"
       end
